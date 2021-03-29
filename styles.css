@@ -1,0 +1,141 @@
+body
+{
+	margin:0px;
+	font-family:'Comic sans ms',sans-serif;
+}
+
+/*-------Main Header--------*/
+#main-header
+{
+	background:linear-gradient(45deg,blue,orange,green);
+	/*background:white url('../IMAGES/jsp.png') no-repeat scroll;
+	background-position:center 500px;*/
+	background-size:cover;
+	padding:30px;
+	text-align:right;
+}
+#main-header h1
+{
+	color:white;
+	margin:0px;
+}
+
+/*-------Main Navbar--------*/
+#main-navbar
+{
+	background:linear-gradient(45deg,darkslategrey,coral,blue);
+	padding:10px;
+	display:flex;
+	flex-direction:row;
+}
+#main-navbar a
+{
+	color:white;
+	text-decoration:none;
+	margin-right:40px;
+	display:inline-block;
+	padding:5px 20px;
+	border-radius:10px;
+	background:linear-gradient(45deg,magenta,darkslategrey);
+}
+#main-navbar a:hover
+{
+	box-shadow:0 0 10px white;
+}
+#main-navbar a.active
+{
+	background:linear-gradient(45deg,darkslategrey,darkred);
+}
+.fa
+{
+	padding-right:5px;
+}
+
+/*----------Main Content Section----------*/
+#main-content-section
+{
+	text-align:center;
+	margin-top:15px;
+}
+#main-content-section .main-content-article
+{
+	box-shadow:0 0 10px black;
+	width:330px;
+	display:inline-block;
+	height:500px;
+	margin-right:10px;
+	border-radius:20px;
+	display:inline-grid;
+	transition:all 0.5s;
+}
+#main-content-section .main-content-article img
+{
+	width:inherit;
+}
+#main-content-section .main-content-article:hover
+{
+	width:340px;
+	cursor:pointer;
+}
+
+/*---------Main News Section---------*/
+
+#main-news-section
+{
+	background:linear-gradient(45deg,lightsalmon,yellow);
+	width:80%;
+	margin:auto;
+	text-align:center;
+	border-radius:20px;
+
+}
+#main-news-section .main-news-article
+{
+	border-radius:20px;
+	box-shadow:0 0 10px blue;
+}
+
+#main-news-section .main-news-article h2
+{
+	background:linear-gradient(45deg,orange,blue,green);
+	padding:10px;
+	color:white;
+	border-radius:20px 20px 0px 0px;
+}
+#main-news-section .main-news-article .zoom
+{
+	width:70%;
+	border-radius:20px;
+	margin:auto;
+	overflow:hidden;
+}
+#main-news-section .main-news-article .zoom img
+{
+	width:inherit;
+	height:250px;
+	border-radius:20px;
+	transition:all 1s;
+}
+#main-news-section .main-news-article .zoom:hover img
+{
+	transform:scale(1.2,1.2);
+}
+
+/*------------Main Footer-------------*/
+footer
+{
+	background:linear-gradient(45deg,blue,orange,green);
+	color:white;
+	text-align:center;
+}
+@media (min-width:0px) and (max-width:800px)
+{
+	#main-navbar
+	{
+		flex-direction:column;
+	}
+	#main-navbar a
+	{
+		margin-top:10px;
+	}
+}
